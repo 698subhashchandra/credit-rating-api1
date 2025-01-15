@@ -1,0 +1,36 @@
+# Ignore .env file (contains sensitive information)
+#.env
+
+# Ignore Python bytecode files
+*.pyc
+__pycache__
+
+# Ignore log files and directories
+log/
+*.log
+
+# Ignore Dockerfile itself (if not needed in the container)
+Dockerfile
+
+# Ignore the .git directory (Git repository metadata)
+.git/
+
+# Ignore virtual environment directory
+venv/
+.env/
+
+# Ignore temporary files and editor backups
+*.swp
+*.bak
+*.tmp
+*.idea/
+.vscode/
+
+# Ignore test files (optional, if you don't want to include them in the image)
+tests/
+
+# Ignore any build artifacts or node_modules (for Node.js projects)
+node_modules/
+
+# Ignore any other configuration files or directories that should not be part of the image
+.idea/
