@@ -1,5 +1,5 @@
 # Stage 1: Build stage
-FROM python:3.12-slim as build
+FROM python:3.12-slim AS build
 
 # Set environment variables
 ENV VIRTUAL_ENV=/opt/venv
@@ -23,7 +23,7 @@ RUN python3 -m venv $VIRTUAL_ENV \
     && pip install --no-cache-dir -r requirements.txt
 
 # Stage 2: Final stage
-FROM python:3.12-slim as final
+FROM python:3.12-slim AS final
 
 # Set the virtual environment path
 ENV VIRTUAL_ENV=/opt/venv
