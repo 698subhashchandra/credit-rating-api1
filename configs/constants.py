@@ -34,7 +34,7 @@ DEFAULT_CONFIG_VALUES = {
 
     FLASK_ENV: "dev",
     DEBUG_KEY: False,
-    HOST_KEY: "127.0.0.1",
+    HOST_KEY: "0.0.0.0",
     PORT_KEY: 5000,
     LOGGING_TYPE_KEY: "ERROR",
     CACHE_TYPE_KEY: "simple",
