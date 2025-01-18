@@ -46,3 +46,7 @@ ENV PYTHONUNBUFFERED=1 FLASK_ENV=prod
 
 # Start the application
 CMD ["python", "main.py"]
+
+
+
+
