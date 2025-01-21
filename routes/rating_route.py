@@ -33,7 +33,7 @@ def calculate_credit_rating() -> Any:
         Any: JSON response object with the result or error details.
     """
     try:
-        print("push docker latest version")
+        print("push latest version")
         return process_credit_rating_request()
     except JSONDecodeError as e:
         return handle_error(e, INPUT_ERROR_MSG, HTTPStatus.BAD_REQUEST, INVALID_JSON_FORMAT_MSG)
