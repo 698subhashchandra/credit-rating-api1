@@ -39,7 +39,7 @@ COPY --from=build /opt/venv /opt/venv
 COPY . .
 
 # Expose the application port
-EXPOSE 5000
+EXPOSE 8000
 
 # Set the environment variables
 ENV PYTHONUNBUFFERED=1 FLASK_ENV=prod
