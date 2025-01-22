@@ -1,12 +1,12 @@
 
- services:
-   credit-rating-api:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    ports:
-      - "8000:8000"  # Map container port 8080 to host port 8080
-    env_file:
-      - .env  # Load environment variables from the .env file
-    volumes:
-      - .:/app  # Mount the local directory to the container (optional)
+# services:
+#   credit-rating-api:
+#    build:
+#      context: .
+#      dockerfile: Dockerfile
+#    ports:
+#      - "8000:8000"  # Map container port 8080 to host port 8080
+#    env_file:
+#      - .env  # Load environment variables from the .env file
+#    volumes:
+#      - .:/app  # Mount the local directory to the container (optional)
