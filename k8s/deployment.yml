@@ -12,8 +12,6 @@ spec:
       app: credit-rating-api
   template:
     metadata:
-      name: node-pod
-      namespace: credit-rating-api
       labels:
         app: credit-rating-api
     spec:
