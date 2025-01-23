@@ -1,25 +1,25 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: node-app-deployment
-  namespace: node-app
+  name: credit-rating-api-deployment
+  namespace: credit-rating-api
   labels:
-    app: node-app
+    app: credit-rating-api
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: node-app
+      app: credit-rating-api
   template:
     metadata:
       name: node-pod
-      namespace: node-app
+      namespace: credit-rating-api
       labels:
-        app: node-app
+        app: credit-rating-api
     spec:
       containers:
-        - name: node-container
-          image: trainwithshubham/node-app-batch-6
+        - name: credit-rating-api-container
+          image: 698subhashchandra/credit-ratingapis:latest
           ports:
             - containerPort: 8000
           resources:
