@@ -1,29 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: credit-rating-api-deployment
-  namespace: credit-rating-api
-  labels:
-    app: credit-rating-api
+  name: credit-app-deployment
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: credit-rating-api
+      app: credit-app
   template:
     metadata:
       labels:
-        app: credit-rating-api
+        app: credit-app
     spec:
       containers:
-        - name: credit-rating-api-container
-          image: 698subhashchandra/credit-ratingapis:latest
-          ports:
-            - containerPort: 8000
-          resources:
-            requests:
-              memory: "64Mi"
-              cpu: "250m"
-            limits:
-              memory: "128Mi"
-              cpu: "500m"
+      - name: credit-app
+        image: 698subhashchandra/credit-ratingapis:latest
+        ports:
+        - containerPort: 80
